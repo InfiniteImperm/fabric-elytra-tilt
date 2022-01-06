@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "fabric-elytra-tilt",
+  "version": "${version}",
+  "name": "Fabric Elytra Tilt",
+  "description": "This mod shows the tilt of a player on the screen to help flying with an elytra in large heights or in the void.",
+  "authors": [
+    "InfiniteImperm"
+  ],
+  "contact": {
+    "homepage": "https://github.com/InfiniteImperm",
+    "sources": "https://github.com/InfiniteImperm/fabric-elytra-tilt"
+  },
+  "license": "MIT",
+  "icon": "assets/fabric-elytra-tilt/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.infiniteimperm.fabric.elytratilt.ElytraTilt"
+    ]
+  },
+  "mixins": [
+    "fabric-elytra-tilt.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
